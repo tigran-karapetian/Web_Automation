@@ -42,7 +42,7 @@ class OrderPage:
 
     @allure.step('Выбрать срок аренды')
     def set_rental_period(self):
-        self.driver.find_elements(*OrderPageLocators.rental_date_menu).click()
+        self.driver.find_element(*OrderPageLocators.rental_date_menu).click()
         self.driver.find_element(*OrderPageLocators.rental_date).click()
 
     @allure.step('Выбрать цвет самоката')
